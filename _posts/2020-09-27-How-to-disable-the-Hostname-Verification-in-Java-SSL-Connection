@@ -9,11 +9,11 @@ when we open an SSL connection in Java the default implementation of the SSL pro
 
 
 For Example if the server certificate is having the below as the "Subject Alternate Name(SAN)" entries:
-	SubjectAlternativeName [
-     DNSName: inchVM.domain.com
-     DNSName: inkumarVM.domain.com
-     IPAddress: 127.0.0.1
-     ]
+		SubjectAlternativeName [
+    	DNSName: inchVM.domain.com
+     	DNSName: inkumarVM.domain.com
+     	IPAddress: 127.0.0.1
+     	]
 And if we try to open the connection for the "https://11.22.33.44:1234/" (where the IP address matches one of the DNS names available in the certificate)using the below code:
 	java.net.URL.openConnection(“https://….”))
 
