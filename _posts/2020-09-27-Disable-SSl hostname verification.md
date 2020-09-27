@@ -8,11 +8,9 @@ when we open an SSL connection in Java the default implementation of the SSL pro
 
 For Example if the server certificate is having the below as the "Subject Alternate Name(SAN)" entries:<br/>
 ``
-<code>
 	SubjectAlternativeName [
     	DNSName: inchVM.domain.com
      	DNSName: inkumarVM.domain.com
      	IPAddress: 127.0.0.1
      	]
-</code>
 ``
