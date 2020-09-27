@@ -1,6 +1,7 @@
 ---
 published: true
 ---
+<p style="color:black">
 when we open an SSL connection in Java the default implementation of the SSL protocol performs below validations to ensure the requested host is not fake:<br/>
 1.It performs the ssl handshake.<br/>
 2.During the handshake it validates if the server certificate is available in the JVMs truststore(by 		default cacerts is the JVM truststore).<br/>
@@ -16,3 +17,4 @@ For Example if the server certificate is having the below as the "Subject Altern
          ]
    </pre>
  </div>
+ </p>
