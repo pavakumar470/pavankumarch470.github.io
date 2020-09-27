@@ -39,5 +39,3 @@ Below is the example code for overwriting the  default "verify" function:
 	HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid)
 
 With the above code we can disable the HostName Verification and make sure that it validates for all the Hostnames and IP address. Else we can write the other logics for validating the Hostname(the default logic works based on the SAN and CN entries available in the certificate)
-
-
