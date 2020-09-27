@@ -14,5 +14,5 @@ For Example if the server certificate is having the below as the "Subject Altern
      	DNSName: inkumarVM.domain.com
      	IPAddress: 127.0.0.1
      	]
-<code>
+</code>
 ``
