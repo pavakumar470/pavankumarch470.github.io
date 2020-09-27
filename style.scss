@@ -285,7 +285,7 @@ footer {
 #code_block{
   box-sizing: border-box;
   background-color: #b3b3ff;
-  opacity:0.5;
+  opacity:0.3;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
