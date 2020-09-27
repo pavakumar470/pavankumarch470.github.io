@@ -7,6 +7,7 @@ when we open an SSL connection in Java the default implementation of the SSL pro
 3.once the valid certificate is found in the JVM truststore during the handshake. The validation of the 	Hostname verification takes place based on the "**CN**" and "**SAN**" entries available in the Server 		certificate.<br/>
 
 For Example if the server certificate is having the below as the "Subject Alternate Name(SAN)" entries:<br/>
+> We loved with a love that was more than love
 <code>
 	SubjectAlternativeName [<br/>
     	DNSName: inchVM.domain.com<br/>
@@ -14,4 +15,5 @@ For Example if the server certificate is having the below as the "Subject Altern
      	IPAddress: 127.0.0.1<br/>
      	]
  </code>
+ > We loved with a love that was more than love
 
