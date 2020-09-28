@@ -14,5 +14,34 @@ For Example if the server certificate is having the below as the "Subject Altern
          IPAddress: 127.0.0.1
          ]
  ```
+<br/>
+And if we try to open the connection for the "https://11.22.33.44:1234/" (where the IP address matches one of the DNS names available in the certificate)using the below code:<br/>
+ ```java
+  java.net.URL.openConnection(“https://….”))
+```
+<br/>
+The SSL handshake process failes with the below error:<br/>
+```
+	The SSL handshake process failes with the below error:Caused by: java.security.cert.CertificateException: 		No subject alternative names matching IP address 11.22.33.44 found
+       		at sun.security.util.HostnameChecker.matchIP(HostnameChecker.java:168)
+       		at sun.security.util.HostnameChecker.match(HostnameChecker.java:94)
+       		at sun.security.ssl.X509TrustManagerImpl.checkIdentity(X509TrustManagerImpl.java:455)
+       		at sun.security.ssl.X509TrustManagerImpl.checkIdentity(X509TrustManagerImpl.java:436)
+       		at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:200)
+```
+<br/>
+
+To overcome the above error while performing the SSL handshake we can follow the one of the below approach:<br/>
+1.re-generate the server certificates with all the valid DSN names and the associated IP address as well.<br/>
+2.Or we need to over write the "verify" function and the set the "HostnamVerifier" to use the new function.<br/>
  
- 
+Below is the example code for overwriting the  default "verify" function:<br/>
+```java
+	HostnameVerifier allHostsValid = new HostnameVerifier() {
+    	        public boolean verify(String hostname, SSLSession session) {
+        	     //user logic for validating the Hostanames  
+            	  return true;
+            	}
+        	};
+	HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+```
