@@ -37,11 +37,11 @@ To overcome the above error while performing the SSL handshake we can follow the
  
 Below is the example code for overwriting the  default "verify" function:<br/>
 ```java
-HostnameVerifier allHostsValid = new HostnameVerifier() {
+HostnameVerifier validatingHosts = new HostnameVerifier() {
     public boolean verify(String hostname, SSLSession session) {
         //user logic for validating the Hostanames  
         return true;
         }
     };
-HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+HttpsURLConnection.setDefaultHostnameVerifier(validatingHosts);
 ```
