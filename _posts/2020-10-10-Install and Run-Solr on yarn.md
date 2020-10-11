@@ -5,6 +5,7 @@ published: false
 Once downloaded the move the tgx file to the /package/files/solr.tgz
 2.Create the metainfo.xml file with the below content and make sure yoe edit the tgz file name according to the one which is placed in /package/files/solr.tgz:
 ```java
+<pre>
 <?xml version="1.0"?>
 <!--
    Licensed to the Apache Software Foundation (ASF) under one or more
@@ -71,4 +72,5 @@ Once downloaded the move the tgx file to the /package/files/solr.tgz
 
   </application>
 </metainfo>
+</pre>
 ```
