@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 1.Download the Solr distributions archive file(tgz)
 Once downloaded the move the tgx file to the /package/files/solr.tgz<br/>
