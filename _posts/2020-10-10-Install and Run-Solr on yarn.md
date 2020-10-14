@@ -4,7 +4,7 @@ published: false
 1.Download the Solr distributions archive file(tgz)
 Once downloaded the move the tgx file to the /package/files/solr.tgz<br/>
 2.Create the metainfo.xml file with the below content and make sure yoe edit the tgz file name according to the one which is placed in /package/files/solr.tgz:<br/>
-```xml
+```html
 <?xml version="1.0"?>
 <!--
    Licensed to the Apache Software Foundation (ASF) under one or more
@@ -71,11 +71,6 @@ Once downloaded the move the tgx file to the /package/files/solr.tgz<br/>
 
   </application>
 </metainfo>
-```
-
-3.once both metainfo.xml and solr binaries are formed zip them usin the below:
-```java
-zip -r solr-on-yarn.zip metainfo.xml package/
 ```
 5.create the slor and slider directories in hdfs and then create the "appConfig.json" file with the below properties:<br/>
 ```java
