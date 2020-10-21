@@ -8,12 +8,12 @@ Here in this blog we will talk about the installation of the HDP cluster using t
 http://<hostanme>:<port>/ambari
 ```
 3.create the hdputils.repo and edit the base urls for the HDP and HDP-Utils:<br/>
-```java
+```html
 http://<hostname>:<port>/HDP
 http://<hostname>:<port>:HDP-UTILS
 ```
 4.install the ambari-server with the below:<br/>
-```java
+```html
 yum install ambari-server
 ```
 5.then setup the ambari server using the below(the below is the silint installation where the java home can be overwritten):<br/>
