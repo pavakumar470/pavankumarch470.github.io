@@ -1,10 +1,10 @@
 ---
 published: true
 ---
-Here in this blog we will talk about the installation of the HDP cluster using the Blue prints and local repos
+Here in this blog we will talk about the installation of the HDP cluster using the Blue prints and local repos<br/>
 1.create the local repo for the cluster installers on the server machine using the httpd/simplehttp service<br/>
 2.create the ambari.repo file under /etc/yum.repos.d and edit the base url as below:<br/>
-```java
+```html
 http://<hostanme>:<port>/ambari
 ```
 3.create the hdputils.repo and edit the base urls for the HDP and HDP-Utils:<br/>
