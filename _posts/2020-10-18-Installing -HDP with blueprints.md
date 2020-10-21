@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 ---
 
 1.create the local repo for the cluster installers on the server machine using the httpd/simplehttp service.<br/>
