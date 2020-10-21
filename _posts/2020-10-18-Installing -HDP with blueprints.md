@@ -1,6 +1,7 @@
 ---
 published: true
 ---
+
 1.create the local repo for the cluster installers on the server machine using the httpd/simplehttp service.<br/>
 2.create the ambari.repo file under /etc/yum.repos.d and edit the base url as below:<br/>
 ```java
