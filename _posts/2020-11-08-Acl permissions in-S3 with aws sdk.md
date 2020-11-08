@@ -10,7 +10,7 @@ Below are permissions that can be provided for the Bucket and the Objects that a
 3.Permission.FullControl<br/>
 4.Permission.ReadAcp-->allows grantee to read object/bucket ACL<br/>
 5.Permission.WriteAcp-->allows grantee to write the object/bucket ACL<br/> 
-<br/>
+<br/><br/>
 For performing the above operations using the Java aws sdk we need to s3 client in java and for the s3 bucket oprations we should have the below jar files downloaded and we should use the same in the classpath:<br/>
 1.aws-java-sdk-core-1.11.665.jar<br/>
 2.aws-java-sdk-s3-1.11.665.jar<br/>
