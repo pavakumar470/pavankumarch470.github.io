@@ -3,7 +3,7 @@ published: true
 ---
 
 With Acces Control List in S3 we will have the control over the buckets and the obects that created inside the buckets<br/>
-<br/>
+<br/><br/>
 Below are permissions that can be provided for the Bucket and the Objects that are available in the Bucket:<br/>
 1.Permission.Read<br/>
 2.Permission.Write<br/>
