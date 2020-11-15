@@ -8,9 +8,9 @@ Below are the few senior  when the java process is not progressing:<br/>
 2.when there is a dead lock between the multiple threads that are launched as part of the program.<br/>
 3.when the program is waiting on the join(),wait() functions.<br/>
 
-Analyzing the Jstack in each of the above scenario:<br/>
+### Analyzing the Jstack in each of the above scenario:<br/>
 <br/>
-when the program is in the infinite loop:<br/>
+### when the program is in the infinite loop:<br/>
 if any of the java program is having the loop as "while(true)" this loop will cause in the in-finite loop which will never terminate.
 <br/>
 then if take the Jstack on the PID we can see that that the thread will be in the runnable state forever with the below where it stack of the JStack it provides the details of the loop:
@@ -20,7 +20,7 @@ then if take the Jstack on the PID we can see that that the thread will be in th
         at loop.Loop.main(Loop.java:5)
 ```
 <br/>
-when there is a dead lock between the multiple threads that are launched as part of the program:
+### when there is a dead lock between the multiple threads that are launched as part of the program:
 when ever the developer write a program they tend to use the multi threading which will help them in achieving the multiple tasks parallelly. Sometimes with this multi-threading there could be a situation where the one thread will be waiting for the other threads lock in this case the program will not do any thing each thread will be waiting for the other thread to release the lock.<br/>
 below is the thread dump of such scenario:<br/>
 ```java
@@ -40,7 +40,7 @@ below is the thread dump of such scenario:<br/>
 in the above thread dump you can observe that "Thread-0" has obtained lock on "0x000000071945d788" and waiting to get the lock on "0x000000071945d798" and in the same time "Thread-1" has obtained the lock on "0x000000071945d798" and waiting to get the lock on "0x000000071945d788"
 
 <br/>
-when the program is waiting on the join(),wait():<br/>
+### when the program is waiting on the join(),wait():<br/>
 this could happen if the program has used the join or wait functions un-conditionally or without any time limit. Below is the jstack of the thread which is waiting on the object in-finitely:<br/>
 ```java
 "Thread-0" #9 prio=5 os_prio=0 tid=0x00007f84d80f6000 nid=0x3bba in Object.wait() [0x00007f84bf4f3000]
