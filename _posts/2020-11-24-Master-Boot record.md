@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Master boot recod is one which is responsible for loading the kernel or OS into the RAM.<br/><br/>
 
