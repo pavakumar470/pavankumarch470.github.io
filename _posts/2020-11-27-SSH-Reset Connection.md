@@ -14,7 +14,7 @@ But recently i faced an issue where even after making sure that the max number o
 <br/>
 After running the script multiple time i found that it is failing while running the 4 or 5th ssh command in a row when i have debugged little further i found that while running the ssh commands the packets are getting rejected/dropped when we have seen the tcpdump on the ssh port i didn't find much of an information.<br/>
 <br/>
-but when checked the iptables rules for the 22 port I found the below rules:<br/>
+but when checked the iptables rules for the 22 port I found the below rules:<br/><br/>
 ```java
 /usr/sbin/iptables -I INPUT -p tcp --dport 22 -i eth0 -m state --state NEW -m recent --set
 /usr/sbin/iptables -I INPUT -p tcp --dport 22 -i eth0 -m state --state NEW -m recent  --update --seconds 60 --hitcount 4 -j REJECT --reject-with tcp-reset
