@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 when ever there is a process running the best practice is to the amount of memroy it would require but most of the times. But most of the times programmers might request more memory than it would require which will make machine run out of memroy and will make the oom killer to kill the process which is holding more amount of memroy. and the process will be killed on the oom_score.<br>
 <br/><br/>
