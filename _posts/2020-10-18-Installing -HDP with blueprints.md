@@ -21,8 +21,9 @@ yum install ambari-server
 sudo ambari-server setup -j /home/Informatica/10.4.0/java --silent
 ```
 6.install the ambari agent on all the cluster machines using:<br/>
-``java
+```java
 yum install ambari-agent
+sudo ambari-agent reset <ambari-server-host-name>
 ```
 7.edit the "/etc/ambari-agent/conf/ambari-agent.ini" file and add the ambari-server hostname on all the ambari-agent machines and then start the ambari server and agents.<br/>
 8.create the json file which conatins the complete blueprint. below is the example for the blueprint with single node:<br/>
