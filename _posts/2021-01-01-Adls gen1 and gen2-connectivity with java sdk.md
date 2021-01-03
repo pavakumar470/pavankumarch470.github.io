@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Recently i have an usecase where i have to run an application which will connect to ADLS GEn1 and ADLS Gen2 to storage. But before using the application i want to make sure that the machine where iam trying to use the application is able to connect to the gen1 and gen2 storage accounts.<br/>
 
