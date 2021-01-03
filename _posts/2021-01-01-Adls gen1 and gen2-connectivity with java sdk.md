@@ -57,20 +57,12 @@ public class ADLS_GEN1_TEST {
 Below is the app for Gen2:
 ```java
 package adls_gen2;
-//import com.azure.core.credential.TokenCredential;
 import com.azure.core.http.rest.PagedIterable;
-//import com.azure.storage.common.StorageSharedKeyCredential;
-//import com.azure.storage.file.datalake.DataLakeDirectoryClient;
-//import com.azure.storage.file.datalake.DataLakeFileClient;
 import com.azure.storage.file.datalake.DataLakeFileSystemClient;
 import com.azure.storage.file.datalake.DataLakeServiceClient;
 import com.azure.storage.file.datalake.DataLakeServiceClientBuilder;
 import com.azure.storage.file.datalake.models.ListPathsOptions;
-//import com.azure.storage.file.datalake.models.PathAccessControl;
-//import com.azure.storage.file.datalake.models.PathAccessControlEntry;
 import com.azure.storage.file.datalake.models.PathItem;
-//import com.azure.storage.file.datalake.models.PathPermissions;
-//import com.azure.storage.file.datalake.models.RolePermissions;
 import com.azure.identity.ClientSecretCredential;
 import com.azure.identity.ClientSecretCredentialBuilder;
 
