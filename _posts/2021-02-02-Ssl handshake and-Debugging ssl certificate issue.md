@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Below are the steps while performing the SSL Handshake:<br/>
 1.cleint sends the Hello message and the message conatins the "session ID","Cipher Suits","Compression methods" and "signature methods"<br/>
