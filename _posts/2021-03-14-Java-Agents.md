@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 Recently i faced an issue where while accessing the external url for the application and trying to login it is failing to login with "Un authorized error". and i observed that it is happening only with the external url and working as expected with the internal url.<br/>
 
@@ -132,5 +132,3 @@ public byte[] transform(ClassLoader loader, String className, Class<?> classBein
 }
 /java/bin/java -javaagent:agent.jar="Test;sum" -cp "/root/javaassist*.jar:Test.jar" Test
 ```
-
- 
